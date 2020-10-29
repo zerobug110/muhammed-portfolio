@@ -1,0 +1,25 @@
+{
+  "name": "muhammed-portfolio",
+  "version": "1.0.0",
+  "description": "my personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerobug110/muhammed-portfolio.git"
+  },
+  "keywords": [
+    "porfolio"
+  ],
+  "author": "Muhammed Bojang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zerobug110/muhammed-portfolio/issues"
+  },
+  "homepage": "https://github.com/zerobug110/muhammed-portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
