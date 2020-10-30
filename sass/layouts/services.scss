@@ -1,0 +1,45 @@
+.services {
+    background-color: #fff;
+    grid-column: col-start 1 / col-end;
+    text-align: center;
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+        font-size: 1.6rem;
+        text-align: left;
+
+        grid-column-gap: 5rem;
+        grid-row-gap: 5rem;
+
+    
+    }
+
+    &__content {
+        box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+                    0 .1rem .2rem 0 rgba(0,0,0, .2);
+        padding: 2rem;
+        border-radius: .2rem;
+        //background-color: $primary-color;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__no {
+        margin-right: 2rem;
+        font-size: 2rem;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+    }
+
+    &__description {
+        color: $light-font;
+    }
+}

@@ -1,0 +1,25 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%; // 10px which is 1rem divided by 16 i.e the default font size  is equal to 62.5%. now 1rem = 10px
+    font-family: sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem[full-end];
+    
+}
