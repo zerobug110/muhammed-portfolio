@@ -1,14 +1,14 @@
 .header {
     background-image: url(../images/background-img.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
   
     grid-column: full-start / full-end;
     height: 100vh;
 }
 
 .text-box {
-    max-width: 55rem;
+    max-width: 50rem;
     position: absolute;
     top: 50%;
     left: 30%;
@@ -19,11 +19,11 @@
 }
 
 .primary-heading {
-    font-size: 6rem;
+    font-size: 5.7rem;
+    color: $dark-font;
     font-weight: 550;
     display: block;
-    color: #333;
-    text-transform: capitalize;
+    text-transform: capitalize
 
 }
 
@@ -39,7 +39,7 @@
     background-color: $secondary-color;
     padding: 1rem 3rem;
     border-radius: 2rem;
-    color: #333;
+    color: $dark-font;
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -64,7 +64,7 @@
 
     &__links a {
         text-decoration: none;
-        color: #333;
+        color: $dark-font;
 
         &:hover {
             color: $secondary-color;

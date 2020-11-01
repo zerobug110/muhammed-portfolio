@@ -1,5 +1,46 @@
 .contacts {
-    background-color: blue;
-
     grid-column: col-start 1 / col-end;
+    text-align: center;
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+    }
+
+    &__content {
+        grid-column: col-start 1 / col-end;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-column-gap: 10rem;
+        grid-row-gap: 5rem;
+    }
+
+    &__svg {
+        width: 40rem;
+        height: 30rem;
+    }
 }
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-input {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-color: $primary-color;
+        outline: none;
+        border: none;
+    }
+
+    &__textarea {
+        background-color: $primary-color;
+        outline: none;
+        border: none;
+    }
+}
+

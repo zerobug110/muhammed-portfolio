@@ -31,12 +31,14 @@
     &__no {
         margin-right: 2rem;
         font-size: 2rem;
+        color: $secondary-color;
     }
 
     &__heading {
         font-size: 2rem;
         margin-bottom: 2rem;
         text-transform: capitalize;
+        color: $dark-font;
     }
 
     &__description {

@@ -10,10 +10,12 @@ html {
   font-family: sans-serif; }
 
 body {
+  font-family: sans-serif;
+  font-weight: 350;
   box-sizing: border-box;
   background-color: #fff;
   color: #222;
-  line-height: 1.6; }
+  line-height: 1.7; }
 
 #container {
   display: grid;
@@ -21,8 +23,9 @@ body {
 
 .section-heading {
   font-size: 3rem;
-  font-weight: 550;
-  text-transform: capitalize;
+  color: #3F3D56;
+  font-weight: 500;
+  text-transform: uppercase;
   margin-bottom: 2rem; }
 
 .margin-bottom {
@@ -31,12 +34,12 @@ body {
 .header {
   background-image: url(../images/background-img.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   grid-column: full-start / full-end;
   height: 100vh; }
 
 .text-box {
-  max-width: 55rem;
+  max-width: 50rem;
   position: absolute;
   top: 50%;
   left: 30%;
@@ -46,10 +49,10 @@ body {
   margin-bottom: 4rem; }
 
 .primary-heading {
-  font-size: 6rem;
+  font-size: 5.7rem;
+  color: #3F3D56;
   font-weight: 550;
   display: block;
-  color: #333;
   text-transform: capitalize; }
 
 .secondary-heading {
@@ -63,7 +66,7 @@ body {
   background-color: #f3be39;
   padding: 1rem 3rem;
   border-radius: 2rem;
-  color: #333;
+  color: #3F3D56;
   text-decoration: none;
   text-transform: capitalize; }
 
@@ -83,7 +86,7 @@ body {
     justify-content: space-between; }
   .nav-bar__links a {
     text-decoration: none;
-    color: #333; }
+    color: #3F3D56; }
     .nav-bar__links a:hover {
       color: #f3be39; }
 
@@ -114,45 +117,101 @@ body {
     justify-content: space-between; }
   .services__no {
     margin-right: 2rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    color: #f3be39; }
   .services__heading {
     font-size: 2rem;
     margin-bottom: 2rem;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    color: #3F3D56; }
   .services__description {
-    color: #666; }
+    color: #777; }
 
 .about {
-  grid-column: col-start 2 / col-start 8;
-  display: flex;
-  align-items: center; }
+  grid-column: col-start 1 / col-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-column-gap: 10rem; }
   .about__img-box {
-    height: 20rem;
-    width: 20rem;
-    background-color: red;
-    shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%); }
-  .about__img {
-    width: 100%;
-    height: 100%;
-    border-radius: 70%; }
+    max-width: 50rem;
+    justify-self: center; }
   .about__description {
-    color: #666;
+    color: #777;
     font-size: 1.6rem; }
-  .about__text-box {
-    width: 75%; }
+
+.submit {
+  outline: none;
+  border: none;
+  background-color: #f3be39;
+  width: 10rem; }
+
+.svg {
+  width: 100%;
+  height: 100%; }
 
 .skills {
-  background-color: grey;
-  grid-column: col-start 1 / col-end; }
+  grid-column: col-start 2 / col-start 8;
+  text-align: center; }
+  .skills__list {
+    font-size: 2rem;
+    color: #a7a1cf;
+    text-transform: uppercase;
+    font-weight: 650;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 5rem; }
 
 .projects {
-  background-color: yellow;
-  grid-column: col-start 1 / col-end; }
+  background-color: #f3f4f5;
+  grid-column: full-start / full-end;
+  padding: 5rem 0;
+  text-align: center; }
+  .projects__section--container {
+    display: grid;
+    grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem; }
+  .projects__container {
+    grid-column: col-start 1 / col-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem; }
+  .projects__content {
+    height: 20rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
+  .projects__img {
+    width: 100%;
+    height: 100%; }
 
 .contacts {
-  background-color: blue;
-  grid-column: col-start 1 / col-end; }
+  grid-column: col-start 1 / col-end;
+  text-align: center; }
+  .contacts__container {
+    display: grid;
+    grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem; }
+  .contacts__content {
+    grid-column: col-start 1 / col-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column-gap: 10rem;
+    grid-row-gap: 5rem; }
+  .contacts__svg {
+    width: 40rem;
+    height: 30rem; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .form-input {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f3f4f5;
+    outline: none;
+    border: none; }
+  .form__textarea {
+    background-color: #f3f4f5;
+    outline: none;
+    border: none; }
 
 .footer {
-  background-color: green; }
+  grid-column: full-start / full-end; }

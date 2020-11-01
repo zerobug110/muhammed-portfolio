@@ -1,22 +1,18 @@
 .about {
-    grid-column: col-start 2 / col-start 8;
-    display: flex;
-    align-items: center;
+    grid-column: col-start 1 / col-end;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column-gap: 10rem;
+    
+    
     
     &__img-box {
-        height: 20rem;
-        width: 20rem;
-        background-color: red;
+        max-width: 50rem;
+        justify-self: center;
         
-        shape-outside: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
     }
 
-    &__img {
-        width: 100%;
-        height: 100%;
-        border-radius: 70%;
-    }
 
     &__description {
         color: $light-font;
@@ -24,37 +20,19 @@
     }
 
     &__text-box {
-        width: 75%;
+
     }
+}
 
-    // &__container {
-    //     max-width: 70rem;
-    //     margin: 0 auto;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     background-color: red;
-    // }
+.submit {
+    outline: none;
+    border: none;
+    background-color: $secondary-color;
+    width: 10rem
     
-    // &__img-box{
-    //     width: 20rem;
-    //     height: 20rem;
-    //     clip-path: circle(50% at 50% 50%);
-    //     shape-outside: circle(50% at 50% 50%);
+}
 
-    // }   
-
-    // &__img {
-    //     width: 100%;
-    //     height: 100%;
-    // }
-
-    // &__text-box {
-    //     font-size: 1.6rem;
-    //     max-width: 80rem;
-    // }
-
-    // &__text  {
-
-    // }
+.svg {
+    width: 100%;
+    height: 100%;
 }

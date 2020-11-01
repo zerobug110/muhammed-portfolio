@@ -1,5 +1,32 @@
 .projects {
-    background-color: yellow;
+    background-color: $primary-color;
+    grid-column: full-start / full-end;
+    padding: 5rem 0;
+    text-align: center;
 
-    grid-column: col-start 1 / col-end;
+    &__section--container {
+        display: grid;
+        grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+    }
+
+    &__container {
+        grid-column: col-start 1 / col-end;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    &__content {
+        //width: 30rem;
+        height: 20rem;
+        border: 1rem solid $white;
+
+        box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+                    0 .1rem .2rem 0 rgba(0,0,0, .2);
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
 }
