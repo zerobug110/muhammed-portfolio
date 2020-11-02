@@ -26,10 +26,10 @@ body {
   color: #3F3D56;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
 
 .margin-bottom {
-  margin-bottom: 7rem; }
+  margin-bottom: 5rem; }
 
 .header {
   background-image: url(../images/background-img.jpg);
@@ -59,16 +59,21 @@ body {
   font-size: 1.6rem;
   font-weight: 550;
   display: block;
-  color: #555; }
+  color: #555;
+  text-transform: capitalize; }
 
 .btn {
   font-size: 1.6rem;
+  color: #3F3D56;
   background-color: #f3be39;
   padding: 1rem 3rem;
   border-radius: 2rem;
-  color: #3F3D56;
   text-decoration: none;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  transition: all .2s; }
+  .btn:hover {
+    color: #f3be39;
+    background-color: #3F3D56; }
 
 .nav-bar {
   height: 6rem;
@@ -139,12 +144,6 @@ body {
     color: #777;
     font-size: 1.6rem; }
 
-.submit {
-  outline: none;
-  border: none;
-  background-color: #f3be39;
-  width: 10rem; }
-
 .svg {
   width: 100%;
   height: 100%; }
@@ -183,7 +182,7 @@ body {
     height: 100%; }
 
 .contacts {
-  grid-column: col-start 1 / col-end;
+  grid-column: full-start / full-end;
   text-align: center; }
   .contacts__container {
     display: grid;
@@ -203,15 +202,50 @@ body {
   flex-direction: column;
   justify-content: center; }
   .form-input {
+    font-size: 1.6rem;
+    font-family: sans-serif;
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: #f3f4f5;
+    background-color: #e0e0e0;
     outline: none;
-    border: none; }
+    border: none;
+    border-radius: .2rem;
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
+    .form-input::placeholder {
+      text-transform: capitalize; }
   .form__textarea {
-    background-color: #f3f4f5;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    background-color: #e0e0e0;
     outline: none;
-    border: none; }
+    border: none;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: .2rem;
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
+
+.submit {
+  font-size: 1.6rem;
+  color: #3F3D56;
+  outline: none;
+  border: none;
+  background-color: #f3be39;
+  width: 10rem;
+  margin: 0 auto;
+  border-radius: .2rem;
+  padding: 1rem 2rem; }
+  .submit:hover {
+    background-color: #3F3D56;
+    color: #f3be39; }
 
 .footer {
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  background-color: #f3f4f5;
+  padding: 2rem 0; }
+  .footer__text {
+    font-size: 1.6rem;
+    font-weight: 550;
+    font-style: italic;
+    color: #a7a1cf;
+    text-align: center;
+    text-transform: capitalize; }

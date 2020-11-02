@@ -32,16 +32,23 @@
     font-weight: 550;
     display: block;
     color: #555;
+    text-transform: capitalize;
 }
 
 .btn {
     font-size: 1.6rem;
+    color: $dark-font;
     background-color: $secondary-color;
     padding: 1rem 3rem;
     border-radius: 2rem;
-    color: $dark-font;
     text-decoration: none;
     text-transform: capitalize;
+    transition: all .2s;
+
+    &:hover {
+        color: $secondary-color;
+        background-color: $dark-font;
+    }
 }
 
 .nav-bar {

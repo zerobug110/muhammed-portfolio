@@ -1,7 +1,6 @@
 .contacts {
-    grid-column: col-start 1 / col-end;
+    grid-column: full-start / full-end;
     text-align: center;
-
 
     &__container {
         display: grid;
@@ -23,24 +22,58 @@
 }
 
 
-
 .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     &-input {
+        font-size: 1.6rem;
+        font-family: sans-serif;
         margin-bottom: 2rem;
         padding: 1rem;
-        background-color: $primary-color;
+        background-color: #e0e0e0;
         outline: none;
         border: none;
+        border-radius: .2rem;
+
+        box-shadow: 0 .1rem .2rem 0 rgba(0,0,0, .1),
+                    0 .1rem .2rem 0 rgba(0,0,0, .2);
+        
+        &::placeholder {
+            text-transform: capitalize;
+        }
     }
 
     &__textarea {
-        background-color: $primary-color;
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        background-color: #e0e0e0;
         outline: none;
         border: none;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: .2rem;
+
+        box-shadow: 0 .1rem .2rem 0 rgba(0,0,0, .1),
+                    0 .1rem .2rem 0 rgba(0,0,0, .2);
     }
+}
+
+.submit {
+    font-size: 1.6rem;
+    color: $dark-font;
+    outline: none;
+    border: none;
+    background-color: $secondary-color;
+    width: 10rem;
+    margin: 0 auto;
+    border-radius: .2rem;
+    padding: 1rem 2rem;
+
+    &:hover {
+        background-color: $dark-font;
+        color: $secondary-color;
+    } 
 }
 
