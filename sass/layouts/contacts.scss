@@ -68,12 +68,13 @@
     background-color: $secondary-color;
     width: 10rem;
     margin: 0 auto;
-    border-radius: .2rem;
+    border-radius: 2rem;
     padding: 1rem 2rem;
 
     &:hover {
         background-color: $dark-font;
         color: $secondary-color;
+        cursor: pointer;
     } 
 }
 

@@ -18,21 +18,25 @@
     margin-bottom: 4rem;
 }
 
+.one {
+    transform: translateY(3rem);
+    
+}
+
 .primary-heading {
-    font-size: 5.7rem;
+    font-size: 5.4rem;
     color: $dark-font;
-    font-weight: 550;
+    font-weight: 600;
     display: block;
     text-transform: capitalize
 
 }
 
 .secondary-heading {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 550;
     display: block;
     color: #555;
-    text-transform: capitalize;
 }
 
 .btn {
