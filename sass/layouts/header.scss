@@ -92,6 +92,7 @@
     width: 100%;
     height: 100%;
 }
+
 .social-media {
     width: 15rem;
     margin-top: 4rem;
@@ -100,8 +101,18 @@
     justify-content: space-between;
 
     &__svg {
-        width: 3rem;
-        height: 3rem;
+        width: 2.7rem;
+        height: 2.7rem;
         fill: $dark-font;
+        transition: all .2s;
     }
 }
+
+
+.dribbble:hover {fill: #ea4c89;}
+
+.twitter:hover {fill: #00acee;}
+
+.github:hover {fill: #211f1f;}
+
+.linkedin:hover {fill: #0e76a8;}

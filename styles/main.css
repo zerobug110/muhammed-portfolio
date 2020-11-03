@@ -112,9 +112,22 @@ body {
   align-items: center;
   justify-content: space-between; }
   .social-media__svg {
-    width: 3rem;
-    height: 3rem;
-    fill: #3F3D56; }
+    width: 2.7rem;
+    height: 2.7rem;
+    fill: #3F3D56;
+    transition: all .2s; }
+
+.dribbble:hover {
+  fill: #ea4c89; }
+
+.twitter:hover {
+  fill: #00acee; }
+
+.github:hover {
+  fill: #211f1f; }
+
+.linkedin:hover {
+  fill: #0e76a8; }
 
 .services {
   background-color: #fff;
