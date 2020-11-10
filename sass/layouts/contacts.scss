@@ -20,7 +20,44 @@
         height: 30rem;
     }
 }
+#person {
+    animation: animate 20s ease-in-out infinite;
+}
 
+#letter {
+    animation: upNdown 20s ease-in infinite;
+}
+
+@keyframes upNdown {
+    from {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7rem);
+
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateX(-7rem);
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
 
 .form {
     display: flex;

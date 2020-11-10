@@ -69,10 +69,12 @@ body {
   color: #3F3D56;
   background-color: #f3be39;
   padding: 1rem 3rem;
+  border: none;
+  outline: none;
   border-radius: 2rem;
   text-decoration: none;
   text-transform: capitalize;
-  transition: all .2s; }
+  animation: wave 1s ease-out .7s; }
   .btn:hover {
     color: #f3be39;
     background-color: #3F3D56; }
@@ -129,6 +131,22 @@ body {
 .linkedin:hover {
   fill: #0e76a8; }
 
+@keyframes wave {
+  from {
+    transform: none; }
+  15% {
+    transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg); }
+  30% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg); }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg); }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg); }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg); }
+  to {
+    transform: none; } }
+
 .services {
   background-color: #fff;
   grid-column: col-start 1 / col-end;
@@ -170,9 +188,12 @@ body {
     color: #777;
     font-size: 1.6rem; }
 
-.svg {
+.about-svg {
   width: 100%;
   height: 100%; }
+
+#code {
+  transform: translateX(20rem); }
 
 .skills {
   grid-column: col-start 2 / col-start 8;
@@ -223,6 +244,29 @@ body {
     width: 40rem;
     height: 30rem; }
 
+#person {
+  animation: animate 20s ease-in-out infinite; }
+
+#letter {
+  animation: upNdown 20s ease-in infinite; }
+
+@keyframes upNdown {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-7rem); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes animate {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateX(-7rem);
+    transform: rotate(5deg); }
+  100% {
+    transform: translateY(0); } }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -267,19 +311,22 @@ body {
 
 .footer {
   grid-column: full-start / full-end;
+  height: 14rem;
   background-color: #f3f4f5;
-  padding: 2rem 0; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
   .footer__text {
-    font-size: 1.6rem;
-    font-weight: 550;
+    font-size: 1.7rem;
+    font-weight: 500;
     font-style: italic;
-    color: #a7a1cf;
+    color: #3F3D56;
     text-align: center;
     text-transform: capitalize; }
-  .footer__logo-box {
-    width: 5rem;
-    height: 5rem;
-    margin: 2rem auto; }
   .footer__img {
     width: 100%;
     height: 100%; }
+
+.footer-icon {
+  margin: 0 auto;
+  fill: #f3f4f5; }

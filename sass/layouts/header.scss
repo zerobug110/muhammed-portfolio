@@ -39,15 +39,18 @@
     color: #555;
 }
 
-.btn {
+.btn{
     font-size: 1.6rem;
     color: $dark-font;
     background-color: $secondary-color;
     padding: 1rem 3rem;
+    border: none;
+    outline: none;
     border-radius: 2rem;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .2s;
+
+    animation: wave 1s ease-out .7s;
 
     &:hover {
         color: $secondary-color;
@@ -116,3 +119,28 @@
 .github:hover {fill: #211f1f;}
 
 .linkedin:hover {fill: #0e76a8;}
+
+
+@keyframes wave {
+    from {
+        transform: none;
+    }
+    15% {
+        transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+    }
+    30% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+    }
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+    }
+    to {
+        transform: none;
+    }
+}
