@@ -8,7 +8,7 @@
 }
 
 .text-box {
-    max-width: 50rem;
+    width: 50rem;
     position: absolute;
     top: 50%;
     left: 30%;
@@ -49,6 +49,7 @@
     border-radius: 2rem;
     text-decoration: none;
     text-transform: capitalize;
+    cursor: pointer;
 
     animation: wave 1s ease-out .7s;
 

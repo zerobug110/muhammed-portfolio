@@ -10,14 +10,17 @@
     &__content {
         grid-column: col-start 1 / col-end;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-column-gap: 10rem;
         grid-row-gap: 5rem;
     }
+    &__img {
+        max-width: 40rem;
+    }
 
     &__svg {
-        width: 40rem;
-        height: 30rem;
+        width: 100%;
+        height: 100%;
     }
 }
 #person {
