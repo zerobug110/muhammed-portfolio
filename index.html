@@ -83,6 +83,7 @@
             </div>
         </div>
     </section>    
+
     <section class="about margin-bottom">
         <div class="about__text-box">
             <h2 class="section-heading">about me</h2>
@@ -111,15 +112,16 @@
             <p class="skills__tech">adobe xd</p>
         </div>
     </section>
+
     <section class="projects margin-bottom">
         <h2 class="section-heading">projects</h2>
         <div class="projects__section--container">
             <div class="projects__container">
-                <a href="https://zerobug110.github.io/absolute-estate" target="_blank">
+                <button data-modal-target ="#modal">
                     <div class="projects__content">
                         <img src="images/absolute-estate.png" alt="project images" class="projects__img">
                     </div>     
-                </a>
+                </button>
                 <a href="https://zerobug110.github.io/needia-island" target="_blank">
                     <div class="projects__content">
                         <img src="images/needia-island.png" alt="project images" class="projects__img">
@@ -165,6 +167,7 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="social-media footer-icon">
             <a href="https://github.com/zerobug110" target="blank">
@@ -190,5 +193,67 @@
         </div>
         <p class="footer__text">&copy; 2020 copy right designed & built by muhammed bojang</p>
     </footer>
+    
+    <div class="modal" id="modal-absolute-estate">
+        <div class="modal__info">
+            <button class="modal__close" data-close-button > &times; </button>
+            <h3 class="modal__heading">absolute estate</h3>
+            <p class="modal__paragraph">Absolute estate is real estate website that i built using html css sass and javascript, i use modern css features like grid layout and flexbox. it consist of four pages home, properties, contact and news section. users can find properties listed for sale, with the help of google map api i embedded in it and also svg icons as well. this project is only a frontend design but will complete the backend with nodejs very soon.</p>
+            <div class="modal__projects">
+                <div class="modal__projects--tools">
+                    <p class="tools">html</p>
+                    <p class="tools">css</p>
+                    <p class="tools">sass</p>
+                    <p class="tools">javascript</p>
+                </div>
+                <div class="modal__projects--links">
+                    <a href="">github</a>
+                    <a href="">live demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-needia-island">
+        <div class="modal__info">
+            <button class="modal__close" data-close-button > &times; </button>
+            <h3 class="modal__heading">needia island</h3>
+            <p class="modal__paragraph">Needia island is a fictional Island for tourist to visit spend time on holidays and vacations. Tourist can visit our wonderful beaches, restaurants, organize events like weddings, birthdays and taking advantage of the beautiful green nature to have the greatest time of their lives. tourists can either book the vip or the basic level. both having amazing accommodations but vip has slide advantages over the basic level.</p>
+            <div class="modal__projects">
+                <div class="modal__projects--tools">
+                    <p class="tools">html</p>
+                    <p class="tools">css</p>
+                    <p class="tools">sass</p>
+                    <p class="tools">javascript</p>
+                </div>
+                <div class="modal__projects--links">
+                    <a href="">github</a>
+                    <a href="">live demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__info">
+            <button class="modal__close" data-close-button > &times; </button>
+            <h3 class="modal__heading">flex gym</h3>
+            <p class="modal__paragraph">flex gym is a local gym center for training. all users have to do is to subscribe to the payment plan. there are four difference payment plans namely basic, economic, standard and premium.This website is very responsive, the website also offers online training sessions. flex gym has different section the favorite section is the FAQ section which has a drop down answer to the most frequently asked questions.</p>
+            <div class="modal__projects">
+                <div class="modal__projects--tools">
+                    <p class="tools">html</p>
+                    <p class="tools">css</p>
+                    <p class="tools">sass</p>
+                    <p class="tools">javascript</p>
+                </div>
+                <div class="modal__projects--links">
+                    <a href="">github</a>
+                    <a href="">live demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay">
+
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

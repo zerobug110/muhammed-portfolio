@@ -160,7 +160,7 @@ body {
     grid-column-gap: 5rem;
     grid-row-gap: 5rem; }
   .services__content {
-    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.1);
     padding: 2rem;
     border-radius: .2rem;
     display: flex;
@@ -228,6 +228,80 @@ body {
   .projects__img {
     width: 100%;
     height: 100%; }
+
+.modal {
+  width: 75rem;
+  background-color: #f3f4f5;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 7;
+  transition: all .2 ease-in-out; }
+  .modal__close {
+    font-size: 3rem;
+    color: #3F3D56;
+    position: absolute;
+    right: 1rem;
+    top: .1rem;
+    outline: none;
+    border: none;
+    cursor: pointer; }
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1); }
+  .modal__info {
+    padding: 2rem; }
+  .modal__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #3F3D56;
+    text-align: center;
+    border-bottom: .1rem solid #fff;
+    margin-bottom: 2rem; }
+  .modal__paragraph {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 3rem; }
+  .modal__projects {
+    font-size: 1.6rem;
+    color: #3F3D56;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .modal__projects--tools {
+      width: 30rem;
+      display: flex;
+      justify-content: space-between; }
+    .modal__projects--links {
+      width: 27rem;
+      display: flex;
+      justify-content: space-between; }
+      .modal__projects--links a {
+        text-decoration: none;
+        color: #3F3D56;
+        padding: .1rem 2rem;
+        background-color: #f3be39;
+        border-radius: 2rem;
+        transition: all .2s; }
+        .modal__projects--links a:hover {
+          background-color: #3F3D56;
+          color: #f3be39; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.97);
+  pointer-events: none;
+  opacity: 0; }
+  .overlay.active {
+    pointer-events: all;
+    opacity: 1; }
 
 .contacts {
   grid-column: full-start / full-end;

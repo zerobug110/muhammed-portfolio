@@ -30,3 +30,106 @@
         height: 100%;
     }
 }
+
+// modal popup
+
+.modal {
+    width: 75rem;
+    background-color: $primary-color;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+                0 .1rem .2rem 0 rgba(0,0,0, .2);
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 7;
+    transition: all .2 ease-in-out;
+
+    &__close {
+        font-size: 3rem;
+        color: $dark-font;
+        position: absolute;
+        right: 1rem;
+        top: .1rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__info {
+        padding: 2rem;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $dark-font;
+        text-align: center;
+        border-bottom: .1rem solid #fff;
+        margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+        color: #555;
+        margin-bottom: 3rem;
+    }
+
+    &__projects {
+        font-size: 1.6rem;
+        color: $dark-font;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &--tools {
+            width: 30rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--links {
+            width: 27rem;
+            display: flex;
+            justify-content: space-between; 
+
+           & a {
+            text-decoration: none;
+            color: $dark-font;
+            padding: .1rem 2rem;
+            background-color: $secondary-color;
+            border-radius: 2rem;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $dark-font;
+                color: $secondary-color;
+            }
+           }
+        }
+    }
+
+    
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0, .97);
+    pointer-events: none;
+    opacity: 0;
+
+    &.active {
+        pointer-events: all;
+        opacity: 1;
+    }
+}
