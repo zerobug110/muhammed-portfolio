@@ -1,120 +1,119 @@
 .contacts {
-    grid-column: full-start / full-end;
-    text-align: center;
+	grid-column: full-start / full-end;
+	text-align: center;
 
-    &__container {
-        display: grid;
-        grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
-    }
+	&__container {
+		display: grid;
+		grid-template-columns:
+			5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem))
+			[col-end] 1fr 5rem;
+	}
 
-    &__content {
-        grid-column: col-start 1 / col-end;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-column-gap: 10rem;
-        grid-row-gap: 5rem;
-    }
-    &__img {
-        max-width: 40rem;
-    }
+	&__content {
+		grid-column: col-start 1 / col-end;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		grid-column-gap: 10rem;
+		grid-row-gap: 5rem;
+	}
+	&__img {
+		max-width: 40rem;
+	}
 
-    &__svg {
-        width: 100%;
-        height: 100%;
-    }
+	&__svg {
+		width: 100%;
+		height: 100%;
+	}
 }
 #person {
-    animation: animate 20s ease-in-out infinite;
+	animation: animate 20s ease-in-out infinite;
 }
 
 #letter {
-    animation: upNdown 20s ease-in infinite;
+	animation: upNdown 20s ease-in infinite;
 }
 
 @keyframes upNdown {
-    from {
-        transform: translateY(0);
-    }
+	from {
+		transform: translateY(0);
+	}
 
-    50% {
-        transform: translateY(-7rem);
+	50% {
+		transform: translateY(-7rem);
+	}
 
-    }
-
-    to {
-        transform: translateY(0);
-    }
+	to {
+		transform: translateY(0);
+	}
 }
 
 @keyframes animate {
-    from {
-        transform: translateY(0);
-    }
+	from {
+		transform: translateY(0);
+	}
 
-    50% {
-        transform: translateX(-7rem);
-        transform: rotate(5deg);
-    }
+	50% {
+		transform: translateX(-7rem);
+		transform: rotate(5deg);
+	}
 
-    100% {
-        transform: translateY(0);
-
-    }
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-    &-input {
-        font-size: 1.6rem;
-        font-family: sans-serif;
-        margin-bottom: 2rem;
-        padding: 1rem;
-        background-color: #e0e0e0;
-        outline: none;
-        border: none;
-        border-radius: .2rem;
+	&-input {
+		font-size: 1.7rem;
+		font-family: sans-serif;
+		margin-bottom: 2rem;
+		padding: 1rem;
+		background-color: #e0e0e0;
+		outline: none;
+		border: none;
+		border-radius: 0.2rem;
 
-        box-shadow: 0 .1rem .2rem 0 rgba(0,0,0, .1),
-                    0 .1rem .2rem 0 rgba(0,0,0, .2);
-        
-        &::placeholder {
-            text-transform: capitalize;
-        }
-    }
+		box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1),
+			0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
 
-    &__textarea {
-        font-size: 1.6rem;
-        font-family: sans-serif;
-        background-color: #e0e0e0;
-        outline: none;
-        border: none;
-        margin-bottom: 2rem;
-        padding: 1rem;
-        border-radius: .2rem;
+		&::placeholder {
+			text-transform: capitalize;
+		}
+	}
 
-        box-shadow: 0 .1rem .2rem 0 rgba(0,0,0, .1),
-                    0 .1rem .2rem 0 rgba(0,0,0, .2);
-    }
+	&__textarea {
+		font-size: 1.7rem;
+		font-family: sans-serif;
+		background-color: #e0e0e0;
+		outline: none;
+		border: none;
+		margin-bottom: 2rem;
+		padding: 1rem;
+		border-radius: 0.2rem;
+
+		box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1),
+			0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+	}
 }
 
 .submit {
-    font-size: 1.6rem;
-    color: $dark-font;
-    outline: none;
-    border: none;
-    background-color: $secondary-color;
-    width: 10rem;
-    margin: 0 auto;
-    border-radius: 2rem;
-    padding: 1rem 2rem;
+	font-size: 1.7rem;
+	color: $dark-font;
+	outline: none;
+	border: none;
+	background-color: $secondary-color;
+	width: 10rem;
+	margin: 0 auto;
+	border-radius: 2rem;
+	padding: 1rem 2rem;
 
-    &:hover {
-        background-color: $dark-font;
-        color: $secondary-color;
-        cursor: pointer;
-    } 
+	&:hover {
+		background-color: $dark-font;
+		color: $secondary-color;
+		cursor: pointer;
+	}
 }
-

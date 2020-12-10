@@ -17,11 +17,10 @@ body {
     box-sizing: border-box;
     background-color: #fff;
     color: #222;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 #container {
     display: grid;
     grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem[full-end];
-    font-size: 1.6rem;
 }   

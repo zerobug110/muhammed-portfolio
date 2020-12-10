@@ -1,18 +1,17 @@
 .skills {
-    grid-column: col-start 2 / col-start 8;
+	grid-column: col-start 2 / col-start 8;
 
-    text-align: center;
+	text-align: center;
 
-    &__list {
-        font-size: 2rem;
-        color: #a7a1cf;
-        text-transform: uppercase;
-        //text-shadow: 0 .1rem .2rem rgba(0,0,0, .1);
-        font-weight: 650;
+	&__list {
+		font-size: 2rem;
+		color: #a7a1cf;
+		text-transform: uppercase;
+		//text-shadow: 0 .1rem .2rem rgba(0,0,0, .1);
+		font-weight: 650;
 
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-        grid-gap: 5rem;
-        
-    }
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+		grid-gap: 5rem;
+	}
 }

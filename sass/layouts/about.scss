@@ -1,36 +1,29 @@
 .about {
-    grid-column: col-start 1 / col-end;
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-column-gap: 10rem;
-    
-    
-    
-    &__img-box {
-        max-width: 50rem;
-        justify-self: center;
-        
-    }
+	grid-column: col-start 1 / col-end;
 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-column-gap: 10rem;
 
-    &__description {
-        color: $light-font;
-        font-size: 1.6rem;
-    }
+	&__img-box {
+		max-width: 50rem;
+		justify-self: center;
+	}
 
-    &__text-box {
+	&__description {
+		color: $light-font;
+		font-size: 1.7rem;
+	}
 
-    }
+	&__text-box {
+	}
 }
 
-
-
-.about-svg{
-    width: 100%;
-    height: 100%;
+.about-svg {
+	width: 100%;
+	height: 100%;
 }
 
 #code {
-     transform: translateX(20rem);
+	transform: translateX(20rem);
 }
