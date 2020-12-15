@@ -285,6 +285,10 @@ body {
       .about__description {
         font-size: 1.8em;
         text-align: center; } }
+  .about__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 @media screen and (max-width: 75rem) {
   .about-sec-heading {
@@ -310,9 +314,9 @@ body {
   cursor: pointer;
   margin-top: 3rem; }
   @media screen and (max-width: 75rem) {
-    .cv__link {
+    .cv {
       font-size: 1.2em;
-      text-align: center; } }
+      margin: 5rem auto; } }
 
 .skills {
   grid-column: col-start 2 / col-start 8;
@@ -339,6 +343,9 @@ body {
   .projects__section--container {
     display: grid;
     grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem; }
+    @media screen and (max-width: 75rem) {
+      .projects__section--container {
+        grid-template-columns: 2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem; } }
   .projects__container {
     grid-column: col-start 1 / col-end;
     display: grid;
@@ -444,6 +451,9 @@ body {
   .contacts__container {
     display: grid;
     grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem; }
+    @media screen and (max-width: 75rem) {
+      .contacts__container {
+        grid-template-columns: 2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem; } }
   .contacts__content {
     grid-column: col-start 1 / col-end;
     display: grid;

@@ -4,9 +4,11 @@
 
 	&__container {
 		display: grid;
-		grid-template-columns:
-			5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem))
-			[col-end] 1fr 5rem;
+		grid-template-columns:	5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+
+		@include respond(tab-land) {
+			grid-template-columns:	2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem;
+		}
 	}
 
 	&__content {
