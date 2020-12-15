@@ -268,7 +268,7 @@ body {
     text-transform: capitalize;
     color: #3F3D56; }
   .services__description {
-    color: #777; }
+    color: #444; }
 
 .about {
   grid-column: col-start 1 / col-end;
@@ -279,7 +279,7 @@ body {
     max-width: 50rem;
     justify-self: center; }
   .about__description {
-    color: #777;
+    color: #444;
     font-size: 1.7rem; }
     @media screen and (max-width: 75rem) {
       .about__description {
