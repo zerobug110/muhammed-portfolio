@@ -285,10 +285,11 @@ body {
       .about__description {
         font-size: 1.8em;
         text-align: center; } }
-  .about__text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+  @media screen and (max-width: 75rem) {
+    .about__text-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 @media screen and (max-width: 75rem) {
   .about-sec-heading {
@@ -351,7 +352,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem; }
-    @media screen and (max-width: 75rem) {
+    @media screen and (max-width: 56.25em) {
       .projects__container {
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 2rem; } }

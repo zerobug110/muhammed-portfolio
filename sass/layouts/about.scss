@@ -5,6 +5,8 @@
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	grid-column-gap: 10rem;
 
+	
+
 	&__img-box {
 		max-width: 50rem;
 		justify-self: center;
@@ -14,21 +16,26 @@
 		color: $light-font;
 		font-size: 1.7rem;
 
-		@include respond(tab-land) {
+		@include respond (tab-land) {
 			font-size: 1.8em;
 			text-align: center;
 		}
+
 	}
 
 	&__text-box {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+
+		@include respond(tab-land) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
 	}
 }
 
 .about-sec-heading {
-	@include respond(tab-land) {
+	@include respond (tab-land) {
 		text-align: center;
 	}
 }
@@ -42,6 +49,7 @@
 }
 
 .cv {
+
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	color: $secondary-color;
@@ -54,8 +62,10 @@
 	cursor: pointer;
 	margin-top: 3rem;
 
-	@include respond(tab-land) {
+	
+	@include respond (tab-land) {
 		font-size: 1.2em;
 		margin: 5rem auto;
+		
 	}
 }

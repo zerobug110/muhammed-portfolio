@@ -1,4 +1,4 @@
-//HAMBURGER NAV-BAR AND AUTO DATE GENERATE
+//HAMBURGER NAV-BAR 
 
 //get the  nav items
 const burger = document.querySelector('.lines');
@@ -11,9 +11,6 @@ const date = document.getElementById('date');
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('nav-bar__show');
 });
-
-//generate the current date
-date.innerHTML = new Date().getFullYear();
 
 
 //////////////////////////modal///////////////////////////////////////
