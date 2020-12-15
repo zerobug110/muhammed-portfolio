@@ -5,6 +5,12 @@
 
 	grid-column: full-start / full-end;
 	height: 100vh;
+	
+	@include respond(tab-land) {
+		background-color: $primary-color;
+		background-image: none;
+		text-align: center;
+	}
 }
 
 .nav-bar {
@@ -16,6 +22,12 @@
 	align-items: center;
 	padding: 0 5rem;
 
+	@include respond (tab-land) {
+		align-items: flex-start;
+		background-color: $primary-color;
+        margin-top: 0;
+	}
+
 	&__items {
 		width: 50rem;
 		font-size: 1.7rem;
@@ -24,6 +36,42 @@
 
 		display: flex;
 		justify-content: space-between;
+
+		@include respond (tab-land) {
+            flex-direction: column;
+            align-items: center;
+			justify-content: space-evenly;
+			opacity: 0;
+			pointer-events: none;
+			
+            
+            // font-size: 3rem;
+            // position: absolute;
+            // position: fixed;
+            // clip-path: circle(10rem at 90% -15%);
+            // height: 100%;
+            // width: 100%;
+            // z-index: 90;
+            // pointer-events: none;
+            // background-color: #32b6cd;
+            // transition: all  .4s;
+		}
+		
+		&__show {
+			height: 100vh;
+			width: 100%;
+			background-color: red;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 100;
+			opacity: 1;
+	
+		}
+	
+
 	}
 
 	&__links a {
@@ -34,18 +82,33 @@
 			color: $secondary-color;
 		}
 	}
+
+	@include respond (tab-land) {
+        align-items: flex-start;
+        margin-top: 0;
+
+    }
 }
 
 .text-box {
-	width: 50rem;
+	max-width: 50rem;
 	position: absolute;
 	top: 50%;
 	left: 30%;
 	transform: translate(-50%, -50%);
+
+	@include respond (tab-port) {
+		left: 50%;
+		line-height: 1.5;
+	}
 }
 
 .main-heading {
 	margin-bottom: 4rem;
+
+	@include respond (tab-land) {
+		margin-bottom: 2rem;
+	}
 }
 
 .one {
@@ -58,6 +121,7 @@
 	font-weight: 600;
 	display: block;
 	text-transform: capitalize;
+
 }
 
 .secondary-heading {
@@ -65,6 +129,10 @@
 	font-weight: 550;
 	display: block;
 	color: #555;
+
+	@include respond (tab-land) {
+		display: none;
+	}
 }
 
 .btn {
@@ -89,6 +157,11 @@
 .logo-img-box {
 	width: 4rem;
 	height: 4rem;
+
+	@include respond(tab-land) {
+		transform: translateY(2.5rem);
+		width: 10rem;
+	}
 }
 
 .logo-img {
@@ -102,6 +175,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@include respond (tab-land) {
+		margin: 4rem auto;
+	}
 
 	&__svg {
 		width: 2.7rem;
@@ -149,4 +226,28 @@
 	to {
 		transform: none;
 	}
+}
+
+.lines {
+    padding-bottom: 1rem;
+    margin-right: 4rem;
+    display: none;
+    z-index: 100;
+    position: absolute;
+   
+    top: 5%;
+    right: 5%;
+
+    @include respond  (tab-land) {
+        display: block;
+        
+    }
+}
+
+.line {
+    width: 3rem;
+    height: .4rem;
+    background-color: $secondary-color;
+    margin-bottom: .5rem;
+ 
 }

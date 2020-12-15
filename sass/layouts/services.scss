@@ -12,6 +12,10 @@
 
 		grid-column-gap: 5rem;
 		grid-row-gap: 5rem;
+
+		@include respond (tab-land) {
+			font-size: 1.8em;
+		}
 	}
 
 	&__content {

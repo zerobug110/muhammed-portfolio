@@ -1,3 +1,23 @@
+.section-heading {
+  font-size: 3rem;
+  color: #3F3D56;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 3rem; }
+
+.margin-bottom {
+  margin-bottom: 5rem; }
+
+/*
+0 - 600PX:  Phone
+600 - 900px: Tablet portriat
+900 - 1200px: Tablet landscape
+[1200 - 1800] is whter the normal style apply
+1800px or bigger: big desktop
+
+
+1em = 16px
+*/
 *,
 ::before,
 ::after {
@@ -7,7 +27,17 @@
 html {
   box-sizing: inherit;
   font-size: 62.5%;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  /*
+0 - 600PX:  Phone
+600 - 900px: Tablet portriat
+900 - 1200px: Tablet landscape
+[1200 - 1800] is whter the normal style apply
+1800px or bigger: big desktop
+
+
+1em = 16px
+*/ }
 
 body {
   font-family: sans-serif;
@@ -20,16 +50,9 @@ body {
 #container {
   display: grid;
   grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end]; }
-
-.section-heading {
-  font-size: 3rem;
-  color: #3F3D56;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 3rem; }
-
-.margin-bottom {
-  margin-bottom: 5rem; }
+  @media screen and (max-width: 75rem) {
+    #container {
+      grid-template-columns: [full-start] 2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem [full-end]; } }
 
 .header {
   background-image: url(../images/background-img.jpg);
@@ -37,6 +60,11 @@ body {
   background-position: center;
   grid-column: full-start / full-end;
   height: 100vh; }
+  @media screen and (max-width: 75rem) {
+    .header {
+      background-color: #f3f4f5;
+      background-image: none;
+      text-align: center; } }
 
 .nav-bar {
   grid-column: col-start-1 / col-end;
@@ -46,6 +74,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem; }
+  @media screen and (max-width: 75rem) {
+    .nav-bar {
+      align-items: flex-start;
+      background-color: #f3f4f5;
+      margin-top: 0; } }
   .nav-bar__items {
     width: 50rem;
     font-size: 1.7rem;
@@ -53,21 +86,50 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 75rem) {
+      .nav-bar__items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        opacity: 0;
+        pointer-events: none; } }
+    .nav-bar__items__show {
+      height: 100vh;
+      width: 100%;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      opacity: 1; }
   .nav-bar__links a {
     text-decoration: none;
     color: #3F3D56; }
     .nav-bar__links a:hover {
       color: #f3be39; }
+  @media screen and (max-width: 75rem) {
+    .nav-bar {
+      align-items: flex-start;
+      margin-top: 0; } }
 
 .text-box {
-  width: 50rem;
+  max-width: 50rem;
   position: absolute;
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%); }
+  @media screen and (max-width: 56.25em) {
+    .text-box {
+      left: 50%;
+      line-height: 1.5; } }
 
 .main-heading {
   margin-bottom: 4rem; }
+  @media screen and (max-width: 75rem) {
+    .main-heading {
+      margin-bottom: 2rem; } }
 
 .one {
   transform: translateY(3rem); }
@@ -84,6 +146,9 @@ body {
   font-weight: 550;
   display: block;
   color: #555; }
+  @media screen and (max-width: 75rem) {
+    .secondary-heading {
+      display: none; } }
 
 .btn {
   font-size: 1.6rem;
@@ -103,6 +168,10 @@ body {
 .logo-img-box {
   width: 4rem;
   height: 4rem; }
+  @media screen and (max-width: 75rem) {
+    .logo-img-box {
+      transform: translateY(2.5rem);
+      width: 10rem; } }
 
 .logo-img {
   width: 100%;
@@ -114,6 +183,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media screen and (max-width: 75rem) {
+    .social-media {
+      margin: 4rem auto; } }
   .social-media__svg {
     width: 2.7rem;
     height: 2.7rem;
@@ -148,6 +220,24 @@ body {
   to {
     transform: none; } }
 
+.lines {
+  padding-bottom: 1rem;
+  margin-right: 4rem;
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 5%;
+  right: 5%; }
+  @media screen and (max-width: 75rem) {
+    .lines {
+      display: block; } }
+
+.line {
+  width: 3rem;
+  height: .4rem;
+  background-color: #f3be39;
+  margin-bottom: .5rem; }
+
 .services {
   background-color: #fff;
   grid-column: col-start 1 / col-end;
@@ -159,6 +249,9 @@ body {
     text-align: left;
     grid-column-gap: 5rem;
     grid-row-gap: 5rem; }
+    @media screen and (max-width: 75rem) {
+      .services__container {
+        font-size: 1.8em; } }
   .services__content {
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.1);
     padding: 2rem;
@@ -188,6 +281,14 @@ body {
   .about__description {
     color: #777;
     font-size: 1.7rem; }
+    @media screen and (max-width: 75rem) {
+      .about__description {
+        font-size: 1.8em;
+        text-align: center; } }
+
+@media screen and (max-width: 75rem) {
+  .about-sec-heading {
+    text-align: center; } }
 
 .about-svg {
   width: 100%;
@@ -208,6 +309,10 @@ body {
   text-decoration: none;
   cursor: pointer;
   margin-top: 3rem; }
+  @media screen and (max-width: 75rem) {
+    .cv__link {
+      font-size: 1.2em;
+      text-align: center; } }
 
 .skills {
   grid-column: col-start 2 / col-start 8;
@@ -221,6 +326,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-gap: 5rem; }
+    @media screen and (max-width: 75rem) {
+      .skills__list {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 2rem; } }
 
 .projects {
   background-color: #f3f4f5;
@@ -235,6 +344,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem; }
+    @media screen and (max-width: 75rem) {
+      .projects__container {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 2rem; } }
     .projects__container button {
       outline: none;
       border: none; }
@@ -337,6 +450,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-column-gap: 10rem;
     grid-row-gap: 5rem; }
+    @media screen and (max-width: 75rem) {
+      .contacts__content {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 5rem; } }
   .contacts__img {
     max-width: 40rem; }
   .contacts__svg {

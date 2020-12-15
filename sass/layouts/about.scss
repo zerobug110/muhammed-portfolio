@@ -5,6 +5,8 @@
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	grid-column-gap: 10rem;
 
+	
+
 	&__img-box {
 		max-width: 50rem;
 		justify-self: center;
@@ -13,12 +15,24 @@
 	&__description {
 		color: $light-font;
 		font-size: 1.7rem;
+
+		@include respond (tab-land) {
+			font-size: 1.8em;
+			text-align: center;
+		}
+
 	}
 
 	&__text-box {
+		
 	}
 }
 
+.about-sec-heading {
+	@include respond (tab-land) {
+		text-align: center;
+	}
+}
 .about-svg {
 	width: 100%;
 	height: 100%;
@@ -41,4 +55,13 @@
 	text-decoration: none;
 	cursor: pointer;
 	margin-top: 3rem;
+
+	&__link {
+		@include respond (tab-land) {
+			font-size: 1.2em;
+			text-align: center;
+			
+		}
+	}
+	
 }

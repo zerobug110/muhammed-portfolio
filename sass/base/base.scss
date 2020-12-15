@@ -9,6 +9,33 @@ html {
     box-sizing: inherit;
     font-size: 62.5%; // 10px which is 1rem divided by 16 i.e the default font size  is equal to 62.5%. now 1rem = 10px
     font-family: sans-serif;
+// MEDIA QUERY MANAGER
+
+/*
+0 - 600PX:  Phone
+600 - 900px: Tablet portriat
+900 - 1200px: Tablet landscape
+[1200 - 1800] is whter the normal style apply
+1800px or bigger: big desktop
+
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media screen and (max-width: 37.5em) {@content;} //600px / 16px = 37.5em
+    }
+    @else if $breakpoint == tab-port {
+        @media screen and (max-width: 56.25em) {@content;} //900px / 16px = 56.25em
+    }
+    @else if $breakpoint == tab-land {
+        @media screen and (max-width: 75rem) {@content;} //1200px / 16 = 75em
+    }
+    @else if $breakpoint == big-desktop{
+        @media screen and (min-width: 112.5em) {@content;} // 1800px / 16 = 112.5em
+    }
+}    
 }
 
 body {
@@ -18,11 +45,16 @@ body {
     background-color: #fff;
     color: #222;
     line-height: 1.8;
+
+    
+    
 }
 
 #container {
     display: grid;
     grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem[full-end];
+
+    @include respond (tab-land) {
+        grid-template-columns: [full-start]2rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 2rem[full-end];
+	}
 }   
-
-

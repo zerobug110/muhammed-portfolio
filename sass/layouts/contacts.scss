@@ -15,6 +15,11 @@
 		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 		grid-column-gap: 10rem;
 		grid-row-gap: 5rem;
+
+		@include respond (tab-land) {
+			grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+			grid-gap: 5rem;
+		}
 	}
 	&__img {
 		max-width: 40rem;
