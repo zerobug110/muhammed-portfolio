@@ -27,3 +27,18 @@
 #code {
 	transform: translateX(20rem);
 }
+
+.cv {
+
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: $secondary-color;
+	background-color: $dark-font;
+	padding: 1rem 3rem;
+	border: none;
+	outline: none;
+	border-radius: 2rem;
+	text-decoration: none;
+	cursor: pointer;
+	margin-top: 3rem;
+}

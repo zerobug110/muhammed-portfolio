@@ -196,13 +196,27 @@ body {
 #code {
   transform: translateX(20rem); }
 
+.cv {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #f3be39;
+  background-color: #3F3D56;
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 3rem; }
+
 .skills {
   grid-column: col-start 2 / col-start 8;
   text-align: center; }
   .skills__list {
     font-size: 2rem;
-    color: #a7a1cf;
+    color: #f3be39;
     text-transform: uppercase;
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
     font-weight: 650;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -330,7 +344,7 @@ body {
     height: 100%; }
 
 #person {
-  animation: animate 20s ease-in-out infinite; }
+  animation: animate 10s ease-in-out infinite; }
 
 #letter {
   animation: upNdown 20s ease-in infinite; }

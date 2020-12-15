@@ -5,9 +5,9 @@
 
 	&__list {
 		font-size: 2rem;
-		color: #a7a1cf;
+		color: $secondary-color;
 		text-transform: uppercase;
-		//text-shadow: 0 .1rem .2rem rgba(0,0,0, .1);
+		text-shadow: 0 .1rem .1rem rgba(0,0,0, .1);
 		font-weight: 650;
 
 		display: grid;
