@@ -28,6 +28,7 @@ html {
   box-sizing: inherit;
   font-size: 62.5%;
   font-family: sans-serif;
+  scroll-behavior: smooth;
   /*
 0 - 600PX:  Phone
 600 - 900px: Tablet portriat
@@ -88,22 +89,35 @@ body {
     justify-content: space-between; }
     @media screen and (max-width: 75rem) {
       .nav-bar__items {
+        font-size: 3em;
+        width: 100%;
+        height: 100vh;
+        background-color: #f3be39;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        clip-path: circle(10rem at 90% -16%);
+        overflow: hidden;
+        transition: all .8s;
+        z-index: 2;
         opacity: 0;
-        pointer-events: none; } }
-    .nav-bar__items__show {
-      height: 100vh;
-      width: 100%;
-      background-color: red;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 100;
-      opacity: 1; }
+        pointer-events: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 5;
+        z-index: 100;
+        position: absolute; } }
+  .nav-bar__show {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 5;
+    z-index: 100;
+    position: absolute;
+    clip-path: circle(183rem at 90% -15%); }
   .nav-bar__links a {
     text-decoration: none;
     color: #3F3D56; }
@@ -120,19 +134,29 @@ body {
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%); }
-  @media screen and (max-width: 56.25em) {
+  @media screen and (max-width: 75rem) {
     .text-box {
       left: 50%;
+      top: 60%;
       line-height: 1.5; } }
+  @media screen and (min-width: 112.5em) {
+    .text-box {
+      max-width: 80rem; } }
 
 .main-heading {
   margin-bottom: 4rem; }
   @media screen and (max-width: 75rem) {
     .main-heading {
       margin-bottom: 2rem; } }
+  @media screen and (max-width: 37.5em) {
+    .main-heading {
+      margin-bottom: 7rem; } }
 
 .one {
   transform: translateY(3rem); }
+  @media screen and (max-width: 37.5em) {
+    .one {
+      transform: translateY(-2rem); } }
 
 .primary-heading {
   font-size: 5.4rem;
@@ -140,6 +164,17 @@ body {
   font-weight: 600;
   display: block;
   text-transform: capitalize; }
+  @media screen and (max-width: 37.5em) {
+    .primary-heading {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2; } }
+  @media screen and (min-width: 112.5em) {
+    .primary-heading {
+      font-size: 8rem; } }
+  @media screen and (max-width: 75rem) {
+    .primary-heading {
+      font-size: 5rem; } }
 
 .secondary-heading {
   font-size: 1.8rem;
@@ -149,6 +184,9 @@ body {
   @media screen and (max-width: 75rem) {
     .secondary-heading {
       display: none; } }
+  @media screen and (min-width: 112.5em) {
+    .secondary-heading {
+      font-size: 2rem; } }
 
 .btn {
   font-size: 1.6rem;
@@ -171,7 +209,8 @@ body {
   @media screen and (max-width: 75rem) {
     .logo-img-box {
       transform: translateY(2.5rem);
-      width: 10rem; } }
+      width: 6rem;
+      height: 6rem; } }
 
 .logo-img {
   width: 100%;
@@ -235,7 +274,7 @@ body {
 .line {
   width: 3rem;
   height: .4rem;
-  background-color: #f3be39;
+  background-color: #3F3D56;
   margin-bottom: .5rem; }
 
 .services {
@@ -509,7 +548,8 @@ body {
     border-radius: 0.2rem;
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
     .form-input::placeholder {
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      color: #555; }
   .form__textarea {
     font-size: 1.7rem;
     font-family: sans-serif;
@@ -520,6 +560,8 @@ body {
     padding: 1rem;
     border-radius: 0.2rem;
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
+    .form__textarea::placeholder {
+      color: #555; }
 
 .submit {
   font-size: 1.7rem;

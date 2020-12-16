@@ -89,6 +89,7 @@
 
 		&::placeholder {
 			text-transform: capitalize;
+			color: #555;
 		}
 	}
 
@@ -104,6 +105,10 @@
 
 		box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1),
 			0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+
+		&::placeholder {
+			color: #555;
+		}
 	}
 }
 
