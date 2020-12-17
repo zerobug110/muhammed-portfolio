@@ -2,6 +2,7 @@
 	background-color: #fff;
 	grid-column: col-start 1 / col-end;
 	text-align: center;
+	font-family: 'Poppins', serif;
 
 	&__container {
 		display: grid;
@@ -35,6 +36,8 @@
 	}
 
 	&__heading {
+		font-family: 'Lora', serif;
+		font-weight: 550;
 		font-size: 2rem;
 		margin-bottom: 1rem;
 		text-transform: capitalize;

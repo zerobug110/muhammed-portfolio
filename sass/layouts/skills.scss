@@ -4,11 +4,11 @@
 	text-align: center;
 
 	&__list {
+		font-family: 'Lora', serif;
 		font-size: 2rem;
-		color: $secondary-color;
+		color: $dark-font;
 		text-transform: uppercase;
-		text-shadow: 0 .1rem .1rem rgba(0,0,0, .1);
-		font-weight: 650;
+		font-weight: 550;
 
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));

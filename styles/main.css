@@ -1,4 +1,5 @@
 .section-heading {
+  font-family: 'Lora', serif;
   font-size: 3rem;
   color: #3F3D56;
   font-weight: 600;
@@ -41,8 +42,10 @@ html {
 */ }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Lora', serif;
+  font-family: 'Poppins', serif;
   font-weight: 350;
+  word-spacing: .2rem;
   box-sizing: border-box;
   background-color: #fff;
   color: #222;
@@ -159,6 +162,7 @@ body {
       transform: translateY(-2rem); } }
 
 .primary-heading {
+  font-family: 'Lora', serif;
   font-size: 5.4rem;
   color: #3F3D56;
   font-weight: 600;
@@ -177,8 +181,9 @@ body {
       font-size: 5rem; } }
 
 .secondary-heading {
+  font-family: 'Poppins', serif;
   font-size: 1.8rem;
-  font-weight: 550;
+  font-weight: 400;
   display: block;
   color: #555; }
   @media screen and (max-width: 75rem) {
@@ -280,7 +285,8 @@ body {
 .services {
   background-color: #fff;
   grid-column: col-start 1 / col-end;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Poppins', serif; }
   .services__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -302,6 +308,8 @@ body {
     font-size: 3rem;
     color: #f3be39; }
   .services__heading {
+    font-family: 'Lora', serif;
+    font-weight: 550;
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: capitalize;
@@ -318,6 +326,7 @@ body {
     max-width: 50rem;
     justify-self: center; }
   .about__description {
+    font-family: 'Poppins', serif;
     color: #444;
     font-size: 1.7rem; }
     @media screen and (max-width: 75rem) {
@@ -342,6 +351,7 @@ body {
   transform: translateX(20rem); }
 
 .cv {
+  font-family: 'Poppins', serif;
   font-size: 1.6rem;
   text-transform: uppercase;
   color: #f3be39;
@@ -365,11 +375,11 @@ body {
   grid-column: col-start 2 / col-start 8;
   text-align: center; }
   .skills__list {
+    font-family: 'Lora', serif;
     font-size: 2rem;
-    color: #f3be39;
+    color: #3F3D56;
     text-transform: uppercase;
-    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
-    font-weight: 650;
+    font-weight: 550;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-gap: 5rem; }
@@ -433,13 +443,15 @@ body {
   .modal__info {
     padding: 2rem; }
   .modal__heading {
-    font-size: 2rem;
+    font-family: 'Lora', serif;
+    font-size: 2.4rem;
     text-transform: uppercase;
     color: #3F3D56;
     text-align: center;
     border-bottom: 0.1rem solid #fff;
     margin-bottom: 2rem; }
   .modal__paragraph {
+    font-family: 'Poppins', serif;
     font-size: 1.7rem;
     color: #333;
     margin-bottom: 3rem; }
@@ -452,6 +464,8 @@ body {
     flex-wrap: wrap;
     align-items: center; }
     .modal__projects--tools {
+      font-family: 'Lora', serif;
+      font-weight: 550;
       width: 30rem;
       display: flex;
       justify-content: space-between; }
@@ -589,6 +603,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly; }
   .footer__text {
+    font-family: 'Poppins', serif;
     font-size: 1.7rem;
     font-weight: 500;
     font-style: italic;
