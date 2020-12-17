@@ -46,7 +46,7 @@ body {
   box-sizing: border-box;
   background-color: #fff;
   color: #222;
-  line-height: 1.8; }
+  line-height: 1.6; }
 
 #container {
   display: grid;
@@ -190,8 +190,8 @@ body {
 
 .btn {
   font-size: 1.6rem;
-  color: #3F3D56;
-  background-color: #f3be39;
+  color: #f3be39;
+  background-color: #3F3D56;
   padding: 1rem 3rem;
   border: none;
   outline: none;
@@ -200,8 +200,8 @@ body {
   cursor: pointer;
   animation: wave 1s ease-out 0.7s; }
   .btn:hover {
-    color: #f3be39;
-    background-color: #3F3D56; }
+    color: #3F3D56;
+    background-color: #f3be39; }
 
 .logo-img-box {
   width: 4rem;
@@ -292,18 +292,18 @@ body {
       .services__container {
         font-size: 1.8em; } }
   .services__content {
-    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
     padding: 2rem;
-    border-radius: 0.2rem;
+    border-radius: .2rem;
     display: flex;
     justify-content: space-between; }
   .services__no {
     margin-right: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #f3be39; }
   .services__heading {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-transform: capitalize;
     color: #3F3D56; }
   .services__description {
@@ -353,6 +353,9 @@ body {
   text-decoration: none;
   cursor: pointer;
   margin-top: 3rem; }
+  .cv:hover {
+    background-color: #f3be39;
+    color: #3F3D56; }
   @media screen and (max-width: 75rem) {
     .cv {
       font-size: 1.2em;
@@ -565,17 +568,17 @@ body {
 
 .submit {
   font-size: 1.7rem;
-  color: #3F3D56;
+  color: #f3be39;
+  background-color: #3F3D56;
   outline: none;
   border: none;
-  background-color: #f3be39;
   width: 10rem;
   margin: 0 auto;
   border-radius: 2rem;
   padding: 1rem 2rem; }
   .submit:hover {
-    background-color: #3F3D56;
-    color: #f3be39;
+    color: #3F3D56;
+    background-color: #f3be39;
     cursor: pointer; }
 
 .footer {

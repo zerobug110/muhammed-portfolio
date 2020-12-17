@@ -19,10 +19,9 @@
 	}
 
 	&__content {
-		box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1),
-			0 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+		box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.4);
 		padding: 2rem;
-		border-radius: 0.2rem;
+		border-radius: .2rem;
 		//background-color: $primary-color;
 
 		display: flex;
@@ -31,13 +30,13 @@
 
 	&__no {
 		margin-right: 2rem;
-		font-size: 2rem;
+		font-size: 3rem;
 		color: $secondary-color;
 	}
 
 	&__heading {
 		font-size: 2rem;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		text-transform: capitalize;
 		color: $dark-font;
 	}

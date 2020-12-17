@@ -114,18 +114,18 @@
 
 .submit {
 	font-size: 1.7rem;
-	color: $dark-font;
+	color: $secondary-color;
+	background-color: $dark-font;
 	outline: none;
 	border: none;
-	background-color: $secondary-color;
 	width: 10rem;
 	margin: 0 auto;
 	border-radius: 2rem;
 	padding: 1rem 2rem;
 
 	&:hover {
-		background-color: $dark-font;
-		color: $secondary-color;
+		color: $dark-font;
+		background-color: $secondary-color;
 		cursor: pointer;
 	}
 }

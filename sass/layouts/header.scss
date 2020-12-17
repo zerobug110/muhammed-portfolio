@@ -177,8 +177,8 @@
 
 .btn {
 	font-size: 1.6rem;
-	color: $dark-font;
-	background-color: $secondary-color;
+	color: $secondary-color;
+	background-color: $dark-font;
 	padding: 1rem 3rem;
 	border: none;
 	outline: none;
@@ -189,8 +189,8 @@
 	animation: wave 1s ease-out 0.7s;
 
 	&:hover {
-		color: $secondary-color;
-		background-color: $dark-font;
+		color: $dark-font;
+		background-color: $secondary-color;
 	}
 }
 
