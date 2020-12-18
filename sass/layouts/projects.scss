@@ -48,7 +48,7 @@
 // modal popup
 
 .modal {
-	width: 75rem;
+	max-width: 75rem;
 	border-radius: 0.5rem;
 	background-color: $primary-color;
 	box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1),
@@ -108,6 +108,10 @@
 			width: 30rem;
 			display: flex;
 			justify-content: space-between;
+
+			@include respond(tab-port) {
+				margin-bottom: 2rem;
+			}
 		}
 
 		&--links {
@@ -143,7 +147,6 @@
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.97);
-
 	pointer-events: none;
 	opacity: 0;
 	transition: 200ms ease-in-out;

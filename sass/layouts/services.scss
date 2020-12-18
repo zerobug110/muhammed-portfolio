@@ -11,7 +11,7 @@
 		font-size: 1.7rem;
 		text-align: left;
 
-		grid-column-gap: 5rem;
+		grid-column-gap: 3rem;
 		grid-row-gap: 5rem;
 
 		@include respond (tab-land) {
@@ -20,11 +20,11 @@
 	}
 
 	&__content {
-		box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.4);
+		box-shadow: 0 .1rem .2rem rgba(0,0,0, .1), 
+					0 .2rem .5rem rgba(0,0,0, .2);
 		padding: 2rem;
 		border-radius: .2rem;
-		//background-color: $primary-color;
-
+		
 		display: flex;
 		justify-content: space-between;
 	}
@@ -46,5 +46,6 @@
 
 	&__description {
 		color: $light-font;
+		-webkit-hyphens: auto;
 	}
 }

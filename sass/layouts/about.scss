@@ -14,6 +14,7 @@
 
 	&__description {
 		font-family: 'Poppins', serif;
+		-webkit-hyphens: auto;
 		color: $light-font;
 		font-size: 1.7rem;
 
@@ -21,11 +22,9 @@
 			font-size: 1.8em;
 			text-align: center;
 		}
-
 	}
 
 	&__text-box {
-
 		@include respond(tab-land) {
 			display: flex;
 			flex-direction: column;
