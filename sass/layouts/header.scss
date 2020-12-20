@@ -201,9 +201,8 @@
 	height: 4rem;
 
 	@include respond(tab-land) {
-		transform: translateY(2.5rem);
-		width: 6rem;
-		height: 6rem;	
+		width: 4rem;
+		height: 4rem;	
 	}
 }
 
