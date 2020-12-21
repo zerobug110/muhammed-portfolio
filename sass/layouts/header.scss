@@ -23,9 +23,9 @@
 	padding: 0 5rem;
 
 	@include respond (tab-land) {
-		align-items: flex-start;
+		align-items: flex-end;
 		background-color: $primary-color;
-        margin-top: 0;
+        padding: 3rem 5rem;
 	}
 
 	&__items {
@@ -36,6 +36,7 @@
 
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
 		@include respond (tab-land) {
 			font-size: 3em;
@@ -146,7 +147,7 @@
 	text-transform: capitalize;
 
 	@include respond (phone) {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		font-weight: 500;
 		line-height: 1.2;
 	}
@@ -201,8 +202,8 @@
 	height: 4rem;
 
 	@include respond(tab-land) {
-		width: 4rem;
-		height: 4rem;	
+		width: 3rem;
+		height: 3rem;	
 	}
 }
 
@@ -272,13 +273,12 @@
 
 .lines {
     padding-bottom: 1rem;
-    margin-right: 4rem;
+    margin-right: 3rem;
     display: none;
     z-index: 100;
     position: absolute;
    
-    top: 5%;
-    right: 5%;
+     right: 5%;
 
     @include respond  (tab-land) {
         display: block;
@@ -287,9 +287,9 @@
 }
 
 .line {
-    width: 3rem;
-    height: .4rem;
+    width: 2rem;
+    height: .3rem;
     background-color: $dark-font;
-    margin-bottom: .5rem;
+    margin-bottom: .3rem;
  
 }

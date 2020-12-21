@@ -80,16 +80,17 @@ body {
   padding: 0 5rem; }
   @media screen and (max-width: 75rem) {
     .nav-bar {
-      align-items: flex-start;
+      align-items: flex-end;
       background-color: #f3f4f5;
-      margin-top: 0; } }
+      padding: 3rem 5rem; } }
   .nav-bar__items {
     width: 50rem;
     font-size: 1.7rem;
     text-transform: capitalize;
     list-style: none;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     @media screen and (max-width: 75rem) {
       .nav-bar__items {
         font-size: 3em;
@@ -170,7 +171,7 @@ body {
   text-transform: capitalize; }
   @media screen and (max-width: 37.5em) {
     .primary-heading {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 500;
       line-height: 1.2; } }
   @media screen and (min-width: 112.5em) {
@@ -213,9 +214,8 @@ body {
   height: 4rem; }
   @media screen and (max-width: 75rem) {
     .logo-img-box {
-      transform: translateY(2.5rem);
-      width: 6rem;
-      height: 6rem; } }
+      width: 3rem;
+      height: 3rem; } }
 
 .logo-img {
   width: 100%;
@@ -266,21 +266,20 @@ body {
 
 .lines {
   padding-bottom: 1rem;
-  margin-right: 4rem;
+  margin-right: 3rem;
   display: none;
   z-index: 100;
   position: absolute;
-  top: 5%;
   right: 5%; }
   @media screen and (max-width: 75rem) {
     .lines {
       display: block; } }
 
 .line {
-  width: 3rem;
-  height: .4rem;
+  width: 2rem;
+  height: .3rem;
   background-color: #3F3D56;
-  margin-bottom: .5rem; }
+  margin-bottom: .3rem; }
 
 .services {
   background-color: #fff;
@@ -333,8 +332,7 @@ body {
     font-size: 1.7rem; }
     @media screen and (max-width: 75rem) {
       .about__description {
-        font-size: 1.8em;
-        text-align: center; } }
+        font-size: 1.8em; } }
   @media screen and (max-width: 75rem) {
     .about__text-box {
       display: flex;
