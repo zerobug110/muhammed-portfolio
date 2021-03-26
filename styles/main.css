@@ -458,7 +458,7 @@ body {
   .modal__projects {
     font-size: 1.7rem;
     color: #3F3D56;
-    text-transform: uppercase;
+    text-transform: lowercase;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -473,7 +473,7 @@ body {
         .modal__projects--tools {
           margin-bottom: 2rem; } }
     .modal__projects--links {
-      width: 27rem;
+      width: 23rem;
       display: flex;
       justify-content: space-between; }
       .modal__projects--links a {

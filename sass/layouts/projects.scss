@@ -96,7 +96,7 @@
 	&__projects {
 		font-size: 1.7rem;
 		color: $dark-font;
-		text-transform: uppercase;
+		text-transform: lowercase;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -115,7 +115,7 @@
 		}
 
 		&--links {
-			width: 27rem;
+			width: 23rem;
 			display: flex;
 			justify-content: space-between;
 
