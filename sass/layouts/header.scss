@@ -1,5 +1,6 @@
 .header {
-	background-image: url(../images/background-img.jpg);
+	// background-image: url(../images/background-img.jpg);
+	background-image: url(https://s.itl.cat/pngfile/s/327-3274460_web-development.jpg);
 	background-size: cover;
 	background-position: center;
 
@@ -101,8 +102,12 @@
 	max-width: 50rem;
 	position: absolute;
 	top: 50%;
-	left: 30%;
+	// left: 30%;
 	transform: translate(-50%, -50%);
+	// should be delete
+	text-align: center;
+	left: 50%;
+
 
 	@include respond (tab-land) {
 		left: 50%;
@@ -141,7 +146,8 @@
 .primary-heading {
 	font-family: 'Lora', serif;
 	font-size: 5.4rem;
-	color: $dark-font;
+	// color: $dark-font;
+	color: #fff;
 	font-weight: 600;
 	display: block;
 	text-transform: capitalize;
@@ -166,8 +172,8 @@
 	font-size: 1.8rem;
 	font-weight: 400;
 	display: block;
-	color: #555;
-
+	// color: #555;
+	color: #fff;
 	@include respond (tab-land) {
 		display: none;
 	}
@@ -219,6 +225,9 @@
 	align-items: center;
 	justify-content: space-between;
 
+	//should be delete
+	margin-left: 6rem;
+
 	@include respond (tab-land) {
 		margin: 4rem auto;
 	}
@@ -226,7 +235,8 @@
 	&__svg {
 		width: 2.7rem;
 		height: 2.7rem;
-		fill: $dark-font;
+		// fill: $dark-font;
+		color: #fff;
 		transition: all 0.2s;
 	}
 }

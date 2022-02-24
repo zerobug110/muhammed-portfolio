@@ -59,7 +59,7 @@ body {
       grid-template-columns: [full-start] 2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem [full-end]; } }
 
 .header {
-  background-image: url(../images/background-img.jpg);
+  background-image: url(https://s.itl.cat/pngfile/s/327-3274460_web-development.jpg);
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
@@ -136,8 +136,9 @@ body {
   max-width: 50rem;
   position: absolute;
   top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  text-align: center;
+  left: 50%; }
   @media screen and (max-width: 75rem) {
     .text-box {
       left: 50%;
@@ -165,7 +166,7 @@ body {
 .primary-heading {
   font-family: 'Lora', serif;
   font-size: 5.4rem;
-  color: #3F3D56;
+  color: #fff;
   font-weight: 600;
   display: block;
   text-transform: capitalize; }
@@ -186,7 +187,7 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   display: block;
-  color: #555; }
+  color: #fff; }
   @media screen and (max-width: 75rem) {
     .secondary-heading {
       display: none; } }
@@ -226,14 +227,15 @@ body {
   margin-top: 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-left: 6rem; }
   @media screen and (max-width: 75rem) {
     .social-media {
       margin: 4rem auto; } }
   .social-media__svg {
     width: 2.7rem;
     height: 2.7rem;
-    fill: #3F3D56;
+    color: #fff;
     transition: all 0.2s; }
 
 .dribbble:hover {
