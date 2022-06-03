@@ -216,8 +216,6 @@
 	align-items: center;
 	justify-content: space-between;
 
-	//should be delete
-	margin-left: 6rem;
 
 	@include respond (tab-land) {
 		margin: 4rem auto;
