@@ -101,12 +101,8 @@
 	max-width: 50rem;
 	position: absolute;
 	top: 50%;
-	// left: 30%;
+	left: 30%;
 	transform: translate(-50%, -50%);
-	// should be delete
-	text-align: center;
-	left: 50%;
-
 
 	@include respond (tab-land) {
 		left: 50%;
@@ -145,10 +141,7 @@
 .primary-heading {
 	font-family: 'Lora', serif;
 	font-size: 5.4rem;
-	// color: $dark-font;
-	color: #fff;
-	font-weight: 600;
-	display: block;
+	color: $dark-font;
 	text-transform: capitalize;
 
 	@include respond (phone) {
@@ -171,8 +164,7 @@
 	font-size: 1.8rem;
 	font-weight: 400;
 	display: block;
-	// color: #555;
-	color: #fff;
+	color: #555;
 	@include respond (tab-land) {
 		display: none;
 	}

@@ -4,7 +4,7 @@
   "description": "my personal portfolio website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": " node-sass sass/main.scss styles/main.css -w"
+    "compile:sass": " node-sass sass/main.scss styles/main.css  -w"
   },
   "repository": {
     "type": "git",
