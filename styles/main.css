@@ -220,12 +220,11 @@ body {
   height: 100%; }
 
 .social-media {
-  width: 18rem;
+  width: 15rem;
   margin-top: 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 6rem; }
+  justify-content: space-between; }
   @media screen and (max-width: 75rem) {
     .social-media {
       margin: 4rem auto; } }
